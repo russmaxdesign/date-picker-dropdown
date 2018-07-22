@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  color: #000;
+  background: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1;
+}
+
+h1 {
+  margin: 0 0 1em;
+  line-height: 1.1;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button:hover {
+  color: #000;
+  background: #ccc;
+}
+
+button:focus {
+  color: #fff;
+  background: #000;
+}
+
+.container {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+}
+
+.datepicker-field {
+  float: left;
+  width: 15em;
+  margin: 0 0 1em;
+}
+
+.datepicker-field__label {
+  display: block;
+  margin: 0 0 .5em;
+}
+
+.datepicker-field__input {
+  display: block;
+  width: 15em;
+  border: 1px solid #999;
+  border-radius: .2em;
+  padding: 0 .5em;
+  color: #000;
+  background: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 36px;
+}
+
+.datepicker-field__hint {
+  display: block;
+  margin: .5em 0 0;
+  color: #666;
+  font-size: .875em;
+}
+
+.datepicker-field__error-message {
+  display: block;
+  margin: .3em 0 0;
+  color: red;
+}
+
+.datepicker-trigger {
+  float: left;
+  margin: 0 0 0 .3em;
+  padding-top: 1.5em;
+}
+
+.datepicker-trigger__button {
+  display: block;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #999;
+  border-radius: .2em;
+  color: #000;
+  background: #fff url(datepicker.png) no-repeat center center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.datepicker-trigger__button:hover {
+  background: #ccc url(datepicker-hover.png) no-repeat center center;
+}
+
+.datepicker-trigger__button:focus {
+  background: #000 url(datepicker-focus.png) no-repeat center center;
+}
+
+.datepicker-widget {
+  clear: both;
+  overflow: hidden;
+  width: 20em;
+  border: 1px solid #999;
+  border-radius: .2em;
+  padding: .5em;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+
+.datepicker-widget__button {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #999;
+  border-radius: .2em;
+  color: #000;
+  background: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.datepicker-widget__button--previous {
+  float: left;
+}
+
+.datepicker-widget__button--next {
+  float: right;
+}
+
+.datepicker-widget__heading {
+  margin: 0 0 .5em;
+  line-height: 38px;
+  text-align: center;
+}
+
+.datepicker-widget__table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0;
+}
+
+.datepicker-widget__table th,
+.datepicker-widget__table td {
+  border: 1px solid #999;
+  text-align: center;
+  padding: .5em .2em;
+}
+
+.datepicker-widget__date {
+  width: 100%;
+  border: 1px solid #fff;
+  color: #000;
+  background: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.datepicker-widget__date--current {
+  background: #ccc;
+}
