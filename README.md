@@ -1,6 +1,6 @@
 # Accessible date picker
 
-Demo version: https://russmaxdesign.github.io/date-picker2/.
+Demo version: https://russmaxdesign.github.io/date-picker-dropdown/
 
 ## Initial field requirements
 
